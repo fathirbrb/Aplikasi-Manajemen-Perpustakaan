@@ -1,8 +1,4 @@
 def merge_sort(arr, key=lambda x: x):
-    """
-    Merge Sort rekursif umum.
-    `key`: fungsi untuk menentukan nilai yang diurutkan.
-    """
     if len(arr) <= 1:
         return arr
     mid = len(arr) // 2
@@ -22,4 +18,5 @@ def merge(left, right, key):
             j += 1
     result.extend(left[i:])
     result.extend(right[j:])
+
     return result
